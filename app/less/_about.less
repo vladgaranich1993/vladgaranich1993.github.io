@@ -1,0 +1,135 @@
+//ABOUT START 
+
+//OUR STORY
+.story {
+  padding-top: 76px;
+  background-color: @default-background;
+  @media only screen and (max-width: @lg) {
+    padding-top: 20px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    @media only screen and (max-width: @lg) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  &__head {
+    max-width: 540px;
+  }
+  &__title {
+    color: @general-color;
+    font-size: 1.12rem;
+    font-weight: 300;
+    letter-spacing: 7.2px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    @media only screen and (max-width: @lg) {
+      font-size: 1.87rem;
+      padding-top: 15px;
+    }
+  }
+  &__text {
+    padding-right: 20px;
+    margin: 45px 0;
+    color: @main-text-color;
+    font-size: 0.87rem;
+    font-weight: 400;
+  }
+  &__img {
+    @media only screen and (max-width: @lg) {
+      display: none;
+    }
+  }
+}
+//OUR SKILLS
+.skills {
+  &__title {
+    padding: 25px 0;
+    color: @general-color;
+    font-size: 1.12rem;
+    font-weight: 300;
+    letter-spacing: 7.2px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    @media only screen and (max-width: @lg) {
+      font-size: 1.87rem;
+    }
+  }
+  &__name {
+    padding: 6px;
+  }
+  &__percent {
+    text-align: right; 
+    padding: 10px; 
+    color: @contrast-color; 
+  }
+  &__html {
+    width: 90%; 
+    background-color: @html-color;
+  }
+  &__css {
+    width: 80%; 
+    background-color: @css-color;
+  }
+  &__js {
+    width: 85%; 
+    background-color: @js-color;
+  }
+  &__php {
+    width: 80%; 
+    background-color: @php-color;
+  }
+}
+//OUR TEAM
+.team {
+  padding-top: 100px;
+  background-color: @default-background;
+  &__title {
+    margin-bottom: 40px;
+    font-size: 1.87rem;
+    font-weight: 200;
+    letter-spacing: 12px;
+    line-height: 0.8;
+    text-align: center;
+  }
+  &__text {
+    color: @main-text-color;
+    text-align: center;
+    font-size: 0.87rem;
+  }
+  &__row {
+    margin-top: 67px;
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media only screen and (max-width: @md) {
+      justify-content: center;
+    }
+  }
+}
+//PERSONS
+.persons {
+  margin: 1px;
+  max-width: 360px;
+  @media only screen and (max-width: @xl) {
+    max-width: 300px;
+  }
+  &__text {
+    color: @main-text-color;
+    margin: 10px 0;
+  }
+  &__description {
+    padding: 30px 40px;
+    background-color: @contrast-color;
+  }
+  &__grade {
+    color: #000;
+    margin: 10px 0;
+  }
+}
+//ABOUT END
+//ABOUT PAGE IS COMPLETE

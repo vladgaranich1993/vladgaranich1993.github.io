@@ -1,0 +1,77 @@
+// PORTFOLIO START
+//AGENCY
+.agency {
+  padding-top: 75px;
+  padding-bottom: 140px;
+  background-color: @default-background;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: @xl) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__description {
+    padding: 20px 0;
+    max-width: 40%;
+    @media only screen and (max-width: @xl) {
+      max-width: 100%;
+    }
+  }
+  &__title {
+    padding-bottom: 26px;
+    color: @general-color;
+    font-size: 1.87rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    padding-top: 10px;
+    padding-bottom: 26px;
+    font-size: 1.62rem;
+  }
+  &__data {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text {
+    color: @main-text-color;
+    font-size: 0.87rem;
+    padding-bottom: 60px;
+  }
+}
+//PHOTO CAROUSEL
+.fotorama__carousel {
+  @media only screen and (max-width: @xs) {
+    display: none;
+  }
+}
+//RELATED 
+.related {
+  padding-bottom: 70px;
+  background-color: @default-background;
+  &__title {
+    padding-bottom: 45px;
+    font-size: 1.87rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__text {
+    padding-bottom: 45px;
+    font-size: 0.87rem;
+    text-align: center;
+  }
+  &__pictures {
+    display: flex;
+    justify-content: space-around;
+    @media only screen and (max-width: @xl) {
+      flex-wrap: wrap;
+    }
+  }
+  &__img {
+    margin: 15px;
+  }
+}
+//PORTFOLIO END

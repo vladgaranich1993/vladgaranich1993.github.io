@@ -1,0 +1,231 @@
+
+//BLOG PAGE 
+
+//blog 2 columns
+
+.blog {
+  background: @default-background;
+  padding: 70px 0;
+  @media only screen and (max-width: @xs) {
+      background: #fafafa;
+      padding: 20px 0;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: @xl) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__column {
+    max-width: 30%;
+    @media only screen and (max-width: @xl) {
+      max-width: 95%;
+    }
+    @media only screen and (max-width: @xs) {
+      max-width: 85%;
+    }
+  }
+  &__post {
+    margin-bottom: 25px;
+    &--has-hover {
+      position: relative;
+      &:hover {
+        .blog__content--hover {
+          display: block;
+          background: @general-color;
+          opacity: 0.8;
+         } 
+        }
+      }
+    }
+  &__content {
+    padding: 30px;
+    background-color: @contrast-color;
+  }  
+  &__content--hover {
+    padding: 30px;
+    display: block;
+    transition: 0.1s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+      &:hover {
+        transition: 0.5s;
+        background-color: #000;
+        opacity: 0.9;
+        display: block;
+      }
+    }
+  &__autor {
+    margin-bottom: 10px;
+    color: @blog-info;
+    font-size: 0.81rem;
+    transition: 1s; 
+  }
+  &__text {
+    margin-bottom: 20px;
+    color: @main-text-color;
+    font-size: 1.12rem;
+    font-weight: 400;
+    line-height: 1.33;
+    @media only screen and (max-width: @xs) {
+      font-size: 0.87rem;
+      line-height: 20px;
+    }
+  }
+  &__data {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.87rem;
+    color: #cccccc;
+  }
+  &__icons {
+    color: @blog-info;
+    font-size: 0.87rem;
+  }
+  &__link {
+    margin: 30px 0;
+    padding: 9px 17px;
+    background: black;
+    color: @contrast-color;
+    display: inline-block;
+    font-size: 0.93rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  &__title {
+    margin-bottom: 20px;
+    color: @blog-title;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5;
+    @media only screen and (max-width: @xs) {
+      margin-bottom: 3px;
+      color: #333333;
+      font-size: 0.93rem;
+      font-weight: 700;
+      line-height: 20px;
+    }
+  }
+  &__image {
+    height: 380px;
+    @media only screen and (max-width: @xl) {
+      display: none;
+    }
+  }  
+  &__hover {
+    transition: 0.1s;
+    &:hover {
+      background-color: @general-color;
+      transition: 0.5s;
+      opacity: 0.9;
+      display: block;
+    }
+  }
+}
+
+.icon__hover {
+  transition: 1s;
+  &:hover {
+    color: @like-color;
+    transition: 1s;
+  }
+}
+//3rd column
+.sidebar__title {
+  padding: 14px 0;
+  text-align: center;
+  color: @general-color;
+  background-color: @border-color;
+  font-size: 1.12rem;
+  font-weight: 300;
+  line-height: 1.33;
+  text-transform: uppercase;
+  transition: 1s;
+}
+
+//RECENT
+.recent {
+  margin-bottom: 25px;
+  padding: 15px 25px 28px 28px;
+  background: @contrast-color;
+}
+.search {
+  margin-bottom: 30px;
+  padding: 24px 29px;
+  background: @contrast-color;
+  border: 0;
+  &__line {
+    display: flex;
+  }
+  &__field {
+  	padding-left: 5px;
+    width: 780px;
+    border: 0;
+  }
+}
+
+//instagram
+.instagram {
+  margin-top: 40px;
+  background: @contrast-color;
+  &__images {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 10px; 
+  }
+  &__item {
+    margin: 3px;
+    cursor: pointer;
+    transition: 0.7s;
+  }
+}
+
+//post
+.post {
+  margin-top: 15px;
+  &__item {
+    margin-bottom: 22px;
+    display: flex;
+  }
+  &__link {
+    display: flex;
+    color: @general-color;
+  }
+  &__wrap {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  }
+}
+
+//TAGS
+.tags {
+  background: @contrast-color;
+  &__list {
+    padding: 20px 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__body {
+    margin: 4px 6px;
+    padding: 5px 15px;
+    border: 1px solid @border-color;
+    color: #9c9c9c;
+    font-size: 0.81rem;
+    font-weight: 400;
+    line-height: 1.8;
+    transition: 1s;
+    &:hover {
+      transition: 1s;
+      color: @contrast-color;
+      background: @general-color;
+      cursor: pointer;
+    }
+  }
+}

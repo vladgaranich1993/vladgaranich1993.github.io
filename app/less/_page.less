@@ -1,0 +1,57 @@
+//PAGE WALL FOR REST PAGES
+.page {
+  padding: 110px 0;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  @media only screen and (max-width: @sm) {
+      padding: 20px;
+    }
+  &--about {
+    background-image: url('../img/cutted-bg3.png');
+    background-color: @page-background;
+  }  
+  &--portfolio {
+    background-image: url('../img/cutted-bg2.png');
+    background-color: @page-background-third;
+  }
+  &--blog {
+    background-image: url('../img/cutted-bg.png');
+    background-color: @page-background-second;
+  }
+  &--contact {
+    background-image: url('../img/cutted-bg3.png');
+    background-color: @page-background;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media only screen and (max-width: @sm) {
+      width: 70%;
+    }
+  }
+  &__title {
+    margin-bottom: 10px;
+    padding: 11px 45px;
+    background: @general-color;
+    max-width: 550px;
+    color: @contrast-color;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    @media only screen and (max-width: @sm) {
+      padding: 20px 10px;
+      font-size: 1.31rem;
+    }
+  }
+  &__text {
+    color: @general-color;
+    font-size: 1.12rem;
+    font-weight: 300;
+    line-height: 1.33;
+    text-transform: uppercase;
+    letter-spacing: 7.2px;
+  }
+}
+//PAGE WALL END
